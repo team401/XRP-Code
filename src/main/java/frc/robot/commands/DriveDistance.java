@@ -4,13 +4,13 @@
 
 package frc.robot.commands;
 
-import frc.robot.subsystems.Drivetrain;
 import edu.wpi.first.wpilibj2.command.Command;
+import frc.robot.subsystems.Drivetrain;
 
 public class DriveDistance extends Command {
-  private final Drivetrain m_drive;
+  protected final Drivetrain m_drive;
   private final double m_distance;
-  private final double m_speed;
+  protected final double m_speed;
 
   /**
    * Creates a new DriveDistance. This command will drive your your robot for a desired distance at

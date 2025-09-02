@@ -59,6 +59,10 @@ public class Drivetrain extends SubsystemBase {
     m_diffDrive.arcadeDrive(xaxisSpeed, zaxisRotate);
   }
 
+  public void arcadeDrive(double xaxisSpeed, double zaxisRotate, boolean squareInputs) {
+    m_diffDrive.arcadeDrive(xaxisSpeed, zaxisRotate, squareInputs);
+  }
+
   public void resetEncoders() {
     m_leftEncoder.reset();
     m_rightEncoder.reset();
