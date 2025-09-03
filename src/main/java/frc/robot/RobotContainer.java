@@ -86,12 +86,11 @@ public class RobotContainer {
    * @return the command to run in autonomous
    */
   public Command getAutonomousCommand() {
-    Command command = m_chooser.getSelected();
-    if (command.isFinished()) {
-      command.initialize();
-    }
-
-    return command;
+    // Command command = m_chooser.getSelected();
+    // if (command.isFinished()) {
+    //   command.initialize();
+    // }
+    return new AutonomousHeadingBased(m_drivetrain);
   }
 
   /**

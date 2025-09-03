@@ -6,6 +6,8 @@ import frc.robot.subsystems.Drivetrain;
 public class AutonomousHeadingBased extends SequentialCommandGroup {
   public AutonomousHeadingBased(Drivetrain drive) {
     addCommands(
-        new DriveDistanceStraight(0.5, 40, drive), new DriveDistanceStraight(-0.5, 40, drive));
+        new DriveDistanceStraight(0.5, 40, drive),
+        new DriveDistanceStraight(-0.5, 40, drive),
+        new TurnDegrees(0.5, 90.0, drive));
   }
 }
